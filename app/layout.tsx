@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Red River HVAC Services",
-  description: "Residential and Commercial HVAC Services",
+  title: "Red River HVAC",
+  description: "Red River HVAC Website",
 };
 
 export default function RootLayout({
