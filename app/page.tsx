@@ -1,10 +1,8 @@
-
-export default function Home() {
+export default function Page() {
   return (
-    <main style={{ padding: 40 }}>
-      <h1>Red River HVAC Services</h1>
-      <p>Residential & Commercial HVAC</p>
+    <main>
+      <h1>Red River HVAC</h1>
+      <p>Website is live</p>
     </main>
   );
 }
-
