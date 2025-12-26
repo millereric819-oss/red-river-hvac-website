@@ -1,71 +1,105 @@
 export default function Home() {
   return (
-    <main style={{ fontFamily: "Arial, sans-serif", padding: "2rem", maxWidth: "900px", margin: "0 auto" }}>
-      
-      <h1 style={{ fontSize: "2.5rem", marginBottom: "0.5rem" }}>
+    <main
+      style={{
+        fontFamily: "Arial, sans-serif",
+        padding: "2.5rem",
+        maxWidth: "1000px",
+        margin: "0 auto",
+        lineHeight: "1.6",
+      }}
+    >
+      <h1 style={{ fontSize: "2.6rem", marginBottom: "0.5rem" }}>
         Red River HVAC
       </h1>
 
-      <p style={{ fontSize: "1.2rem", fontWeight: "bold", marginBottom: "1.5rem" }}>
-        Reliable Heating & Cooling in Barnesville, Minnesota
+      <p style={{ fontSize: "1.2rem", fontWeight: "bold", marginBottom: "2rem" }}>
+        Professional HVAC Installation for Residential & Commercial Projects
       </p>
 
-      <p style={{ marginBottom: "2rem" }}>
-        Red River HVAC provides professional heating and air conditioning services
-        for homes and businesses throughout Barnesville and the surrounding Red River Valley.
-        We focus on honest work, dependable service, and keeping your system running when you need it most.
-      </p>
-
-      <h2>Our Services</h2>
-
-      <h3>🔥 Heating Systems</h3>
       <p>
-        Furnace installation, replacement, and repair. We service gas and electric systems
-        to keep your home warm and safe during Minnesota winters.
+        Red River HVAC specializes in professional HVAC installation services for
+        homes, businesses, and light commercial facilities throughout Barnesville,
+        Minnesota and the surrounding Red River Valley.
+        We focus on quality workmanship, code-compliant installations,
+        and systems built to last.
       </p>
 
-      <h3>❄️ Air Conditioning</h3>
-      <p>
-        Central air installation, seasonal maintenance, and fast repairs to keep your home cool
-        and comfortable during the summer months.
-      </p>
+      <hr style={{ margin: "2rem 0" }} />
 
-      <h3>🛠️ HVAC Service & Repair</h3>
-      <p>
-        No heat? No cooling? Strange noises or airflow problems? We troubleshoot and repair
-        HVAC systems quickly and correctly.
-      </p>
+      <h2>Installation Services</h2>
 
-      <h3>🏠 Residential & Light Commercial</h3>
-      <p>
-        We work with homeowners and small businesses, providing dependable HVAC solutions
-        without upselling or unnecessary replacements.
-      </p>
-
-      <h2>Why Choose Red River HVAC?</h2>
+      <h3>🔥 Heating Installation</h3>
       <ul>
-        <li>Local Barnesville service you can trust</li>
-        <li>Honest recommendations and fair pricing</li>
-        <li>Experienced, reliable workmanship</li>
-        <li>Fast response times</li>
+        <li>Gas and electric furnaces</li>
+        <li>Boiler systems</li>
+        <li>Rooftop heating units</li>
       </ul>
+
+      <h3>❄️ Cooling Installation</h3>
+      <ul>
+        <li>Central air conditioning systems</li>
+        <li>Commercial rooftop units (RTUs)</li>
+      </ul>
+
+      <h3>🏢 Commercial HVAC</h3>
+      <ul>
+        <li>Rooftop unit installation and replacement</li>
+        <li>Light commercial heating and cooling systems</li>
+        <li>Make-up air and ventilation support</li>
+      </ul>
+
+      <h3>🏠 Residential HVAC</h3>
+      <ul>
+        <li>New construction and replacement systems</li>
+        <li>Furnace and air conditioner upgrades</li>
+        <li>Efficient, properly sized installations</li>
+      </ul>
+
+      <h3>🧰 Gas Piping & Sheet Metal</h3>
+      <ul>
+        <li>Natural gas piping for HVAC equipment</li>
+        <li>Custom sheet metal fabrication and ductwork</li>
+        <li>Code-compliant installations</li>
+      </ul>
+
+      <hr style={{ margin: "2rem 0" }} />
+
+      <h2>Service & Maintenance</h2>
+      <p>
+        In addition to installations, Red River HVAC provides service and repair
+        for existing heating and cooling systems.
+        Service work is available during normal business hours.
+        We do not offer 24-hour emergency service.
+      </p>
+
+      <hr style={{ margin: "2rem 0" }} />
+
+      <h2>Why Red River HVAC?</h2>
+      <ul>
+        <li>Installation-focused expertise</li>
+        <li>Residential and commercial experience</li>
+        <li>Honest recommendations — no unnecessary upselling</li>
+        <li>Local Barnesville service</li>
+        <li>Quality workmanship done right the first time</li>
+      </ul>
+
+      <hr style={{ margin: "2rem 0" }} />
 
       <h2>Service Area</h2>
       <p>
-        Barnesville, MN and surrounding communities in the Red River Valley.
+        Barnesville, Minnesota and surrounding Red River Valley communities.
       </p>
 
       <h2>Contact</h2>
       <p>
-        📍 Barnesville, Minnesota<br />
+        📍 Barnesville, MN<br />
         📞 <strong>218-731-8101</strong>
       </p>
 
       <p style={{ marginTop: "2rem", fontWeight: "bold" }}>
-        Call today to schedule service or request an estimate.
+        Call today to discuss your HVAC installation project.
       </p>
-
     </main>
   );
 }
-        
