@@ -1,64 +1,126 @@
-
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white text-gray-900">
-      
-      {/* HERO */}
-      <section className="bg-blue-900 text-white py-20 px-6 text-center">
-        <h1 className="text-4xl font-bold mb-4">
+    <main style={{ fontFamily: "Arial, sans-serif" }}>
+      {/* HERO SECTION */}
+      <section
+        style={{
+          backgroundColor: "#7a0000",
+          color: "white",
+          padding: "60px 20px",
+          textAlign: "center",
+        }}
+      >
+        <h1 style={{ fontSize: "42px", marginBottom: "10px" }}>
           Red River HVAC
         </h1>
-        <p className="text-xl mb-6">
-          Reliable Heating & Air Conditioning Services
+        <p style={{ fontSize: "20px", marginBottom: "25px" }}>
+          Reliable Heating & Cooling in Barnesville, Minnesota
         </p>
         <a
-          href="tel:5555555555"
-          className="inline-block bg-red-600 px-8 py-4 rounded text-lg font-semibold"
+          href="tel:12187318101"
+          style={{
+            backgroundColor: "white",
+            color: "#7a0000",
+            padding: "15px 30px",
+            fontSize: "20px",
+            fontWeight: "bold",
+            textDecoration: "none",
+            borderRadius: "6px",
+          }}
         >
-          Call Now for Service
+          Call Now: (218) 731-8101
         </a>
       </section>
 
       {/* SERVICES */}
-      <section className="py-16 px-6 max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10">
+      <section style={{ padding: "50px 20px", textAlign: "center" }}>
+        <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>
           Our Services
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="border p-6 rounded">
-            <h3 className="font-bold text-xl mb-2">AC Repair</h3>
-            <p>Fast and reliable air conditioning repair.</p>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+            gap: "20px",
+            maxWidth: "900px",
+            margin: "0 auto",
+          }}
+        >
+          <div>
+            <h3>Heating Repair</h3>
+            <p>Fast, dependable furnace and boiler repair.</p>
           </div>
-
-          <div className="border p-6 rounded">
-            <h3 className="font-bold text-xl mb-2">Heating Services</h3>
-            <p>Furnace repair, installation, and maintenance.</p>
+          <div>
+            <h3>AC Repair</h3>
+            <p>Keep your home cool all summer long.</p>
           </div>
-
-          <div className="border p-6 rounded">
-            <h3 className="font-bold text-xl mb-2">HVAC Installation</h3>
-            <p>Professional system installs done right.</p>
+          <div>
+            <h3>Installations</h3>
+            <p>New HVAC systems done right the first time.</p>
+          </div>
+          <div>
+            <h3>Emergency Service</h3>
+            <p>When your system fails, we answer the call.</p>
           </div>
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section className="bg-gray-100 py-16 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-4">
+      {/* WHY CHOOSE US */}
+      <section
+        style={{
+          backgroundColor: "#f2f2f2",
+          padding: "50px 20px",
+          textAlign: "center",
+        }}
+      >
+        <h2 style={{ fontSize: "30px", marginBottom: "20px" }}>
+          Why Choose Red River HVAC?
+        </h2>
+        <p style={{ maxWidth: "700px", margin: "0 auto", fontSize: "18px" }}>
+          Locally owned and operated in Barnesville, MN. We provide honest
+          pricing, dependable service, and quality workmanship you can trust.
+        </p>
+      </section>
+
+      {/* CTA */}
+      <section
+        style={{
+          padding: "60px 20px",
+          textAlign: "center",
+        }}
+      >
+        <h2 style={{ fontSize: "32px", marginBottom: "20px" }}>
           Need Service Today?
         </h2>
-        <p className="mb-6">
-          Call Red River HVAC for fast, honest service.
-        </p>
         <a
-          href="tel:5555555555"
-          className="inline-block bg-blue-900 text-white px-8 py-4 rounded text-lg"
+          href="tel:12187318101"
+          style={{
+            backgroundColor: "#7a0000",
+            color: "white",
+            padding: "15px 35px",
+            fontSize: "22px",
+            fontWeight: "bold",
+            textDecoration: "none",
+            borderRadius: "6px",
+          }}
         >
-          Call 555-555-5555
+          Call (218) 731-8101
         </a>
       </section>
 
+      {/* FOOTER */}
+      <footer
+        style={{
+          backgroundColor: "#111",
+          color: "white",
+          textAlign: "center",
+          padding: "20px",
+          fontSize: "14px",
+        }}
+      >
+        © {new Date().getFullYear()} Red River HVAC — Barnesville, Minnesota
+      </footer>
     </main>
   );
 }
