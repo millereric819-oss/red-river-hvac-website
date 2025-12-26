@@ -3,7 +3,7 @@ export default function Home() {
     <main
       style={{
         fontFamily: "Arial, Helvetica, sans-serif",
-        backgroundColor: "#f4f6f8",
+        backgroundColor: "#1f2933",
         padding: "3rem 1.5rem",
         minHeight: "100vh",
       }}
