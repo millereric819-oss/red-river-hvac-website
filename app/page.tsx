@@ -1,126 +1,71 @@
 export default function Home() {
   return (
-    <main style={{ fontFamily: "Arial, sans-serif" }}>
-      {/* HERO SECTION */}
-      <section
-        style={{
-          backgroundColor: "#7a0000",
-          color: "white",
-          padding: "60px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h1 style={{ fontSize: "42px", marginBottom: "10px" }}>
-          Red River HVAC
-        </h1>
-        <p style={{ fontSize: "20px", marginBottom: "25px" }}>
-          Reliable Heating & Cooling in Barnesville, Minnesota
-        </p>
-        <a
-          href="tel:12187318101"
-          style={{
-            backgroundColor: "white",
-            color: "#7a0000",
-            padding: "15px 30px",
-            fontSize: "20px",
-            fontWeight: "bold",
-            textDecoration: "none",
-            borderRadius: "6px",
-          }}
-        >
-          Call Now: (218) 731-8101
-        </a>
-      </section>
+    <main style={{ fontFamily: "Arial, sans-serif", padding: "2rem", maxWidth: "900px", margin: "0 auto" }}>
+      
+      <h1 style={{ fontSize: "2.5rem", marginBottom: "0.5rem" }}>
+        Red River HVAC
+      </h1>
 
-      {/* SERVICES */}
-      <section style={{ padding: "50px 20px", textAlign: "center" }}>
-        <h2 style={{ fontSize: "32px", marginBottom: "30px" }}>
-          Our Services
-        </h2>
+      <p style={{ fontSize: "1.2rem", fontWeight: "bold", marginBottom: "1.5rem" }}>
+        Reliable Heating & Cooling in Barnesville, Minnesota
+      </p>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-            gap: "20px",
-            maxWidth: "900px",
-            margin: "0 auto",
-          }}
-        >
-          <div>
-            <h3>Heating Repair</h3>
-            <p>Fast, dependable furnace and boiler repair.</p>
-          </div>
-          <div>
-            <h3>AC Repair</h3>
-            <p>Keep your home cool all summer long.</p>
-          </div>
-          <div>
-            <h3>Installations</h3>
-            <p>New HVAC systems done right the first time.</p>
-          </div>
-          <div>
-            <h3>Emergency Service</h3>
-            <p>When your system fails, we answer the call.</p>
-          </div>
-        </div>
-      </section>
+      <p style={{ marginBottom: "2rem" }}>
+        Red River HVAC provides professional heating and air conditioning services
+        for homes and businesses throughout Barnesville and the surrounding Red River Valley.
+        We focus on honest work, dependable service, and keeping your system running when you need it most.
+      </p>
 
-      {/* WHY CHOOSE US */}
-      <section
-        style={{
-          backgroundColor: "#f2f2f2",
-          padding: "50px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h2 style={{ fontSize: "30px", marginBottom: "20px" }}>
-          Why Choose Red River HVAC?
-        </h2>
-        <p style={{ maxWidth: "700px", margin: "0 auto", fontSize: "18px" }}>
-          Locally owned and operated in Barnesville, MN. We provide honest
-          pricing, dependable service, and quality workmanship you can trust.
-        </p>
-      </section>
+      <h2>Our Services</h2>
 
-      {/* CTA */}
-      <section
-        style={{
-          padding: "60px 20px",
-          textAlign: "center",
-        }}
-      >
-        <h2 style={{ fontSize: "32px", marginBottom: "20px" }}>
-          Need Service Today?
-        </h2>
-        <a
-          href="tel:12187318101"
-          style={{
-            backgroundColor: "#7a0000",
-            color: "white",
-            padding: "15px 35px",
-            fontSize: "22px",
-            fontWeight: "bold",
-            textDecoration: "none",
-            borderRadius: "6px",
-          }}
-        >
-          Call (218) 731-8101
-        </a>
-      </section>
+      <h3>🔥 Heating Systems</h3>
+      <p>
+        Furnace installation, replacement, and repair. We service gas and electric systems
+        to keep your home warm and safe during Minnesota winters.
+      </p>
 
-      {/* FOOTER */}
-      <footer
-        style={{
-          backgroundColor: "#111",
-          color: "white",
-          textAlign: "center",
-          padding: "20px",
-          fontSize: "14px",
-        }}
-      >
-        © {new Date().getFullYear()} Red River HVAC — Barnesville, Minnesota
-      </footer>
+      <h3>❄️ Air Conditioning</h3>
+      <p>
+        Central air installation, seasonal maintenance, and fast repairs to keep your home cool
+        and comfortable during the summer months.
+      </p>
+
+      <h3>🛠️ HVAC Service & Repair</h3>
+      <p>
+        No heat? No cooling? Strange noises or airflow problems? We troubleshoot and repair
+        HVAC systems quickly and correctly.
+      </p>
+
+      <h3>🏠 Residential & Light Commercial</h3>
+      <p>
+        We work with homeowners and small businesses, providing dependable HVAC solutions
+        without upselling or unnecessary replacements.
+      </p>
+
+      <h2>Why Choose Red River HVAC?</h2>
+      <ul>
+        <li>Local Barnesville service you can trust</li>
+        <li>Honest recommendations and fair pricing</li>
+        <li>Experienced, reliable workmanship</li>
+        <li>Fast response times</li>
+      </ul>
+
+      <h2>Service Area</h2>
+      <p>
+        Barnesville, MN and surrounding communities in the Red River Valley.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        📍 Barnesville, Minnesota<br />
+        📞 <strong>218-731-8101</strong>
+      </p>
+
+      <p style={{ marginTop: "2rem", fontWeight: "bold" }}>
+        Call today to schedule service or request an estimate.
+      </p>
+
     </main>
   );
 }
+        
