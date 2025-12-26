@@ -7,7 +7,31 @@ export default function Home() {
         padding: "3rem 1.5rem",
         minHeight: "100vh",
       }}
-    >
+    >{/* HERO BANNER */}
+<div
+  style={{
+    backgroundImage:
+      "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/hero-hvac.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    padding: "5rem 2rem",
+    marginBottom: "3rem",
+    color: "white",
+    textAlign: "center",
+  }}
+>
+  <h1 style={{ fontSize: "3.2rem", marginBottom: "1rem" }}>
+    Red River HVAC
+  </h1>
+
+  <p style={{ fontSize: "1.5rem", fontWeight: "bold", maxWidth: "800px", margin: "0 auto" }}>
+    Commercial & Residential HVAC Installation Specialists
+  </p>
+
+  <p style={{ marginTop: "1.5rem", fontSize: "1.1rem" }}>
+    Boilers • Rooftop Units • Furnaces • Air Conditioning • Gas Piping • Sheet Metal
+  </p>
+</div>
       <div
         style={{
           maxWidth: "1100px",
