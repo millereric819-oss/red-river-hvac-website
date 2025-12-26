@@ -1,135 +1,112 @@
 export default function Home() {
   return (
-    <main
-      style={{
-        fontFamily: "Arial, Helvetica, sans-serif",
-        backgroundColor: "#1f2933",
-        padding: "3rem 1.5rem",
-        minHeight: "100vh",
-      }}
-    >{/* HERO BANNER */}
-<div
-  style={{
-    backgroundImage:
-      "linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('/hero-hvac.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    padding: "5rem 2rem",
-    marginBottom: "3rem",
-    color: "white",
-    textAlign: "center",
-  }}
->
-  <h1 style={{ fontSize: "3.2rem", marginBottom: "1rem" }}>
-    Red River HVAC
-  </h1>
-
-  <p style={{ fontSize: "1.5rem", fontWeight: "bold", maxWidth: "800px", margin: "0 auto" }}>
-    Commercial & Residential HVAC Installation Specialists
-  </p>
-
-  <p style={{ marginTop: "1.5rem", fontSize: "1.1rem" }}>
-    Boilers • Rooftop Units • Furnaces • Air Conditioning • Gas Piping • Sheet Metal
-  </p>
-</div>
-      <div
+    <main className="min-h-screen bg-gray-900 text-gray-100">
+      
+      {/* HERO SECTION */}
+      <section
+        className="relative bg-cover bg-center py-28 px-6 text-center"
         style={{
-          maxWidth: "1100px",
-          margin: "0 auto",
-          backgroundColor: "#ffffff",
-          padding: "3rem",
-          boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+          backgroundImage:
+            "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/hero-hvac.jpg')",
         }}
       >
-        <h1 style={{ fontSize: "2.8rem", marginBottom: "0.5rem" }}>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
           Red River HVAC
         </h1>
 
-        <p
-          style={{
-            fontSize: "1.25rem",
-            fontWeight: "bold",
-            marginBottom: "2rem",
-          }}
-        >
+        <p className="text-lg md:text-xl font-semibold mb-4">
           Commercial & Residential HVAC Installation Specialists
         </p>
 
-        <p>
-          Red River HVAC provides professional heating, ventilation, and air
-          conditioning installation services for commercial and residential
-          clients throughout Barnesville, Minnesota and the surrounding
-          Red River Valley.
+        <p className="max-w-3xl mx-auto mb-8">
+          Boilers • Rooftop Units • Furnaces • Air Conditioning • Gas Piping • Sheet Metal
         </p>
 
-        <p>
-          Our work is focused on properly designed, code-compliant installations
-          built for long-term performance, reliability, and efficiency.
-        </p>
+        <a
+          href="tel:12187318101"
+          className="inline-block bg-red-700 hover:bg-red-800 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg transition"
+        >
+          Call (218) 731-8101
+        </a>
+      </section>
 
-        <hr style={{ margin: "2.5rem 0" }} />
+      {/* CONTENT CARD */}
+      <section className="bg-gray-100 text-gray-900 py-16 px-6">
+        <div className="max-w-6xl mx-auto bg-white p-10 rounded-xl shadow-xl">
 
-        <h2>Commercial HVAC Services</h2>
-        <ul>
-          <li>Rooftop unit (RTU) installation and replacement</li>
-          <li>Commercial heating and cooling systems</li>
-          <li>Make-up air and ventilation systems</li>
-          <li>Gas piping for commercial HVAC equipment</li>
-          <li>Custom sheet metal and ductwork fabrication</li>
-        </ul>
+          <h2 className="text-3xl font-bold mb-6">
+            Professional HVAC Installation Services
+          </h2>
 
-        <h2>Residential HVAC Installation</h2>
-        <ul>
-          <li>Gas and electric furnace installation</li>
-          <li>Boiler systems</li>
-          <li>Central air conditioning systems</li>
-          <li>System replacements and upgrades</li>
-          <li>New construction HVAC installs</li>
-        </ul>
+          <p className="mb-6">
+            Red River HVAC provides professional HVAC installation services for
+            commercial and residential projects throughout Barnesville, Minnesota
+            and the surrounding Red River Valley. Our focus is on properly designed,
+            code-compliant systems built for long-term reliability and performance.
+          </p>
 
-        <h2>Specialties</h2>
-        <ul>
-          <li>Boilers</li>
-          <li>Rooftop units</li>
-          <li>Furnaces</li>
-          <li>Air conditioning systems</li>
-          <li>Natural gas piping</li>
-          <li>Sheet metal and duct systems</li>
-          <li>Commercial and residential projects</li>
-        </ul>
+          <h3 className="text-2xl font-semibold mt-10 mb-4">
+            Commercial HVAC
+          </h3>
+          <ul className="list-disc pl-6 mb-6 space-y-1">
+            <li>Rooftop unit (RTU) installation and replacement</li>
+            <li>Commercial heating and cooling systems</li>
+            <li>Make-up air and ventilation systems</li>
+            <li>Natural gas piping for HVAC equipment</li>
+            <li>Custom sheet metal and ductwork fabrication</li>
+          </ul>
 
-        <hr style={{ margin: "2.5rem 0" }} />
+          <h3 className="text-2xl font-semibold mt-10 mb-4">
+            Residential HVAC Installation
+          </h3>
+          <ul className="list-disc pl-6 mb-6 space-y-1">
+            <li>Gas and electric furnaces</li>
+            <li>Boiler systems</li>
+            <li>Central air conditioning systems</li>
+            <li>New construction and system replacements</li>
+          </ul>
 
-        <h2>Service & Maintenance</h2>
-        <p>
-          In addition to installations, Red River HVAC provides service and
-          maintenance for heating and cooling systems to keep equipment operating
-          safely and efficiently.
-        </p>
+          <h3 className="text-2xl font-semibold mt-10 mb-4">
+            Service & Maintenance
+          </h3>
+          <p className="mb-6">
+            In addition to installations, Red River HVAC provides professional
+            service and maintenance to keep heating and cooling systems operating
+            safely and efficiently.
+          </p>
 
-        <hr style={{ margin: "2.5rem 0" }} />
+          <h3 className="text-2xl font-semibold mt-10 mb-4">
+            Why Choose Red River HVAC
+          </h3>
+          <ul className="list-disc pl-6 space-y-1">
+            <li>Installation-first expertise</li>
+            <li>Commercial and residential experience</li>
+            <li>Attention to code, safety, and performance</li>
+            <li>Clean, professional workmanship</li>
+            <li>Local Barnesville service</li>
+          </ul>
 
-        <h2>Why Choose Red River HVAC</h2>
-        <ul>
-          <li>Installation-first expertise</li>
-          <li>Commercial and residential experience</li>
-          <li>Attention to code, safety, and system performance</li>
-          <li>Clean, professional workmanship</li>
-          <li>Local service you can rely on</li>
-        </ul>
+          <div className="mt-12 text-center">
+            <p className="text-lg font-semibold">
+              Call today to discuss your HVAC installation project
+            </p>
+            <a
+              href="tel:12187318101"
+              className="inline-block mt-4 bg-red-700 hover:bg-red-800 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg transition"
+            >
+              (218) 731-8101
+            </a>
+          </div>
 
-        <hr style={{ margin: "2.5rem 0" }} />
+        </div>
+      </section>
 
-        <h2>Contact</h2>
-        <p>
-          📍 Barnesville, Minnesota<br />
-          📞 <strong>218-731-8101</strong>
-        </p>
+      {/* FOOTER */}
+      <footer className="bg-gray-950 text-gray-400 py-6 text-center text-sm">
+        © {new Date().getFullYear()} Red River HVAC — Barnesville, Minnesota
+      </footer>
 
-        <p style={{ marginTop: "2rem", fontWeight: "bold" }}>
-          Contact Red River HVAC to discuss your next installation project.
-        </p>
-      </div>
     </main>
   );
 }
+          
