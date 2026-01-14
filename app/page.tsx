@@ -1,101 +1,128 @@
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-900 text-gray-100">
+    <main className="min-h-screen bg-zinc-950 text-zinc-100">
       
       {/* HERO SECTION */}
       <section
-        className="relative bg-cover bg-center py-28 px-6 text-center"
+        className="relative bg-cover bg-center"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/hero-hvac.jpg')",
+            "url('https://images.unsplash.com/photo-1581090700227-1e37b190418e')",
         }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Red River HVAC
-        </h1>
+        <div className="absolute inset-0 bg-black/70"></div>
 
-        <p className="text-lg md:text-xl font-semibold mb-4">
-          Commercial & Residential HVAC Installation Specialists
+        <div className="relative max-w-6xl mx-auto px-6 py-28 text-center">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
+            Red River HVAC
+          </h1>
+
+          <p className="mt-6 text-lg md:text-2xl text-zinc-300">
+            Commercial & Residential HVAC Installation Specialists
+          </p>
+
+          <p className="mt-4 text-zinc-400 max-w-3xl mx-auto">
+            Boilers • Rooftop Units • Furnaces • Air Conditioning • Gas Piping •
+            Sheet Metal
+          </p>
+
+          <a
+            href="tel:2187318101"
+            className="inline-block mt-8 bg-red-700 hover:bg-red-600 transition px-8 py-4 rounded-xl text-lg font-semibold shadow-lg"
+          >
+            Call (218) 731-8101
+          </a>
+        </div>
+      </section>
+
+      {/* INTRO */}
+      <section className="max-w-6xl mx-auto px-6 py-20">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Professional HVAC Installation Built to Last
+        </h2>
+
+        <p className="text-zinc-300 text-lg leading-relaxed">
+          Red River HVAC provides high-quality HVAC installation services for
+          commercial and residential projects throughout Barnesville, Minnesota
+          and the surrounding Red River Valley. We focus on properly designed,
+          code-compliant systems built for long-term performance, efficiency,
+          and reliability.
         </p>
+      </section>
 
-        <p className="max-w-3xl mx-auto mb-8">
-          Boilers • Rooftop Units • Furnaces • Air Conditioning • Gas Piping • Sheet Metal
+      {/* SERVICES GRID */}
+      <section className="bg-zinc-900 py-20">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Our Core Services
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-zinc-800 p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-semibold mb-4 text-red-500">
+                Commercial HVAC
+              </h3>
+              <ul className="space-y-2 text-zinc-300">
+                <li>• Rooftop unit (RTU) installation & replacement</li>
+                <li>• Commercial heating & cooling systems</li>
+                <li>• Make-up air & ventilation systems</li>
+                <li>• Natural gas piping</li>
+                <li>• Custom sheet metal & ductwork</li>
+              </ul>
+            </div>
+
+            <div className="bg-zinc-800 p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-semibold mb-4 text-red-500">
+                Residential HVAC
+              </h3>
+              <ul className="space-y-2 text-zinc-300">
+                <li>• Gas & electric furnaces</li>
+                <li>• Boiler systems</li>
+                <li>• Central air conditioning</li>
+                <li>• New construction installs</li>
+                <li>• System replacements</li>
+              </ul>
+            </div>
+
+            <div className="bg-zinc-800 p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-semibold mb-4 text-red-500">
+                Service & Maintenance
+              </h3>
+              <ul className="space-y-2 text-zinc-300">
+                <li>• Preventative maintenance</li>
+                <li>• Equipment diagnostics & repair</li>
+                <li>• System performance improvements</li>
+                <li>• Honest, professional service</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 text-center px-6">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Start Your Project?
+        </h2>
+
+        <p className="text-zinc-400 max-w-2xl mx-auto mb-8">
+          Whether you’re planning a commercial build or upgrading your home
+          system, Red River HVAC delivers professional installation you can
+          trust.
         </p>
 
         <a
-          href="tel:12187318101"
-          className="inline-block bg-red-700 hover:bg-red-800 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg transition"
+          href="tel:2187318101"
+          className="inline-block bg-red-700 hover:bg-red-600 transition px-10 py-4 rounded-xl text-lg font-semibold shadow-lg"
         >
           Call (218) 731-8101
         </a>
       </section>
 
-      {/* CONTENT CARD */}
-      <section className="bg-gray-100 text-gray-900 py-16 px-6">
-        <div className="max-w-6xl mx-auto bg-white p-10 rounded-xl shadow-xl">
-
-          <h2 className="text-3xl font-bold mb-6">
-            Professional HVAC Installation Services
-          </h2>
-
-          <p className="mb-6">
-            Red River HVAC provides professional HVAC installation services for
-            commercial and residential projects throughout Barnesville, Minnesota
-            and the surrounding Red River Valley. Our focus is on properly designed,
-            code-compliant systems built for long-term reliability and performance.
-          </p>
-
-          <h3 className="text-2xl font-semibold mt-10 mb-4">
-            Commercial HVAC
-          </h3>
-          <ul className="list-disc pl-6 mb-6 space-y-1">
-            <li>Rooftop unit (RTU) installation and replacement</li>
-            <li>Commercial heating and cooling systems</li>
-            <li>Make-up air and ventilation systems</li>
-            <li>Natural gas piping for HVAC equipment</li>
-            <li>Custom sheet metal and ductwork fabrication</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold mt-10 mb-4">
-            Residential HVAC Installation
-          </h3>
-          <ul className="list-disc pl-6 mb-6 space-y-1">
-            <li>Gas and electric furnaces</li>
-            <li>Boiler systems</li>
-            <li>Central air conditioning systems</li>
-            <li>New construction and system replacements</li>
-          </ul>
-
-          <h3 className="text-2xl font-semibold mt-10 mb-4">
-            Service & Maintenance
-          </h3>
-          <p className="mb-6">
-            In addition to installations, Red River HVAC provides professional
-            service and maintenance to keep heating and cooling systems operating
-            safely and efficiently.
-          </p>
-
-          <h3 className="text-2xl font-semibold mt-10 mb-4">
-            Why Choose Red River HVAC
-          </h3>
-          <ul className="list-disc pl-6 space-y-1">
-            <li>Installation-first expertise</li>
-            <li>Commercial and residential experience</li>
-            <li>Attention to code, safety, and performance</li>
-            <li>Clean, professional workmanship</li>
-            <li>Local Barnesville service</li>
-          </ul>
-
-          <div className="mt-12 text-center">
-            <p className="text-lg font-semibold">
-              Call today to discuss your HVAC installation project
-            </p>
-            <a
-              href="tel:12187318101"
-              className="inline-block mt-4 bg-red-700 hover:bg-red-800 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg transition"
-            >
-              (218) 731-8101
-            </a>
-          </div>
-
-            
+      {/* FOOTER */}
+      <footer className="bg-black py-6 text-center text-sm text-zinc-500">
+        © {new Date().getFullYear()} Red River HVAC — Barnesville, Minnesota
+      </footer>
+    </main>
+  );
+}
