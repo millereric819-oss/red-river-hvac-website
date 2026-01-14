@@ -98,15 +98,4 @@ export default function Home() {
             </a>
           </div>
 
-        </div>
-      </section>
-
-      {/* FOOTER */}
-      <footer className="bg-gray-950 text-gray-400 py-6 text-center text-sm">
-        © {new Date().getFullYear()} Red River HVAC — Barnesville, Minnesota
-      </footer>
-
-    </main>
-  );
-}
-          
+            
